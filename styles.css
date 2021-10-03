@@ -1,0 +1,86 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+    grid-template-rows: 1fr,1fr,1fr;
+    grid-template-areas: 
+    "header header"
+    "content sidebar"
+    "footer footer"
+    ;
+    grid-column-gap: 150px;
+}
+
+.header{
+    grid-area: header;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.content{
+    grid-area: content;
+    padding-left: 75px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    padding-right: 75px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #2C5282;
+    color: #FFFFFF;
+
+}
+
+div{
+    font-size: 18px;
+    color: #2d372d;
+    font-family: apple-system,BlinkMacSystemFont,
+    S"egoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+}
+
+.header img{
+    width: 150px;
+    height: 175px;
+    border-radius: 50%;
+}
+.content>article #image1{
+    width: 300px;
+    float: left;
+    padding-right: 10px;
+}
+.content>article #image2{
+    width: 300px;
+    float: right;
+    padding-left: 10px;
+}
+
+h1{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    font-size: 32px;
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section#about{
+    background-color: #E2E8F0;
+    color: #000000;
+    font-family: Georgia,'Times New Roman', Times, serif;
+}
+
+section#social, section#archives h3{
+    color: #48BB78;
+}
+
+li{
+    color: #4299E1;
+}
+
+.content #publish-date{
+    color: #718096;
+}
